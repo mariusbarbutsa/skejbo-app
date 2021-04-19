@@ -139,3 +139,40 @@ a {
   width: 92px;
   height: 92px;
 }
+
+/*-----Onboarding Second Screen-----*/
+
+
+.onboarding_rectangle3 {
+  top: 202px;
+  left: 15px;
+  right: 0;
+  margin: auto;
+  position: relative;
+  background: url('/images/onboarding3.svg') no-repeat;
+  background-size: contain;
+  width: 198px;
+  height: 216px;
+
+}
+
+.onboarding_heading3 {
+  margin: 0 auto;
+  margin-top: 247px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #5979C4;
+  text-align: center;
+
+}
+
+
+.onboarding_gobutton3 {
+  margin: 0 auto;
+  margin-top: 37px;
+  background: url('/images/go_button3.svg') no-repeat;
+  background-size: cover;
+  width: 92px;
+  height: 92px;
+}
