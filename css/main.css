@@ -1,4 +1,97 @@
-*{
+* {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+/*-----Onboarding First Screen-----*/
+
+.onboarding_skip {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #CF705A;
+  margin-top: 27px;
+  margin-right: 22px;
+  float: right;
+  position: relative;
+
+}
+
+.onboarding_rectangle {
+  top: 200px;
+  left: 15px;
+  right: 0;
+  margin: auto;
+  position: relative;
+  background: url('/images/onboarding1.svg') no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 193px;
+
+}
+
+.onboarding_heading {
+  margin: 0 auto;
+  margin-top: 270px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #5979C4;
+  text-align: center;
+
+}
+
+.onboarding_subheading {
+  margin: 24px 11%;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #5979C4;
+  text-align: center;
+
+}
+
+.onboarding_flexpoints {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 37px;
+  width: 20%;
+  justify-content: space-between;
+
+
+}
+
+.onboarding_orangepoint {
+  background-color: #CF705A;
+  width: 21px;
+  height: 9px;
+  border-radius: 10px;
+}
+
+.onboarding_bluepoint {
+  background-color: #A2ABE3;
+  width: 9px;
+  height: 9px;
+  border-radius: 10px;
+}
+
+.onboarding_gobutton {
+  margin: 0 auto;
+  margin-top: 37px;
+  background: url('/images/go_button.svg') no-repeat;
+  background-size: cover;
+  width: 92px;
+  height: 92px;
+}
+
+
+
+
+
+
+/*-----Onboarding Second Screen-----*/
