@@ -91,7 +91,51 @@ a {
 
 
 
-
-
-
 /*-----Onboarding Second Screen-----*/
+
+
+.onboarding_back {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #5979C4;
+  margin-top: 27px;
+  margin-left: 22px;
+  float: left;
+  position: relative;
+
+}
+
+.onboarding_rectangle2 {
+  top: -170px;
+  left: 15px;
+  right: 0;
+  margin: auto;
+  position: relative;
+  background: url('/images/onboarding2.svg') no-repeat;
+  background-size: contain;
+  width: 239px;
+  height: 600px;
+
+}
+
+.onboarding_heading2 {
+  margin: 0 auto;
+  margin-top: -137px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #5979C4;
+  text-align: center;
+
+}
+
+
+.onboarding_gobutton2 {
+  margin: 0 auto;
+  margin-top: 37px;
+  background: url('/images/go_button2.svg') no-repeat;
+  background-size: cover;
+  width: 92px;
+  height: 92px;
+}
