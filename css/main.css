@@ -640,3 +640,37 @@ form {
   margin: 0 auto;
   margin-top: 10px;
 }
+
+.event_image {
+  background: url('../images/news/news-5.png') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 340px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.event_date {
+  margin: 10px 20px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #A2ABE3;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 17px;
+}
+
+.location-pin {
+  margin: 5px 20px;
+  margin-right: 7px;
+}
+
+.location-name {
+  padding: 5px 0;
+  font-size: 12px;
+}
