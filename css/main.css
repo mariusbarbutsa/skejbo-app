@@ -46,15 +46,20 @@ a {
 }
 
 .search-bar input {
-  margin: 30px 0;
-  border: none;
-  background-color: #DADEF4;
-  padding: 15px 0;
-  font-size: 18px;
-  border-radius: 50px;
+  background-color: #DDE1F9;
+  border-radius: 20px;
   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
   text-align: center;
-  color: #5979C4;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 92%;
+  text-align: left;
 }
 
 ::placeholder {
@@ -402,8 +407,8 @@ form {
   margin-top: 20px;
 }
 
-input[type=text],
-input[type=password] {
+.input_pass,
+.input_text {
   background-color: #DDE1F9;
   border-radius: 20px;
   width: 100%;
