@@ -585,3 +585,19 @@ input[type=password] {
   width: 166px;
   height: 179px;
 }
+
+.marketplace_item_image5 {
+  background: url('../images/marketplace/marketplace-5.jpeg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
+}
+
+.marketplace_item_image6 {
+  background: url('../images/marketplace/marketplace-6.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
+}
