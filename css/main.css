@@ -4,39 +4,48 @@
   font-size: 18px;
   color: #464646;
 }
-a{
+
+a {
   text-decoration: none;
   color: #464646;
 }
-.wrapper{
+
+.wrapper {
   width: 90%;
   margin: auto;
 }
-.top-bar{
+
+.top-bar {
   padding: 15px 20px;
   background-color: #fff;
   display: block;
 }
-.logo{
+
+.logo {
   width: 50%;
   float: left;
 }
-.logo img{
+
+.logo img {
   max-width: 230px;
   margin-top: 5px;
 }
-.profile-icon{
+
+.profile-icon {
   float: right;
 }
-.profile-icon img{
+
+.profile-icon img {
   width: 25px;
   height: auto;
   margin-top: 5px;
 }
-.search-bar{
+
+.search-bar {
   text-align: center;
 }
-.search-bar input{
+
+.search-bar input {
   margin: 30px 0;
   border: none;
   background-color: #DADEF4;
@@ -47,73 +56,91 @@ a{
   text-align: center;
   color: #5979C4;
 }
-::placeholder{
+
+::placeholder {
   color: #5979C4;
 }
-.swipe-section{
+
+.swipe-section {
   margin-bottom: 50px;
 }
-.swipe-container{
-  overflow:scroll;
+
+.swipe-container {
+  overflow: scroll;
   white-space: nowrap;
 }
-.swipe-container-warapper{
+
+.swipe-container-warapper {
   margin-right: 8px;
   display: inline-block;
   vertical-align: top;
 }
-.swipe-item{
+
+.swipe-item {
   max-width: 140px;
 }
-.box{
+
+.box {
   border-radius: 15px;
   width: 140px;
   height: 130px;
   background-color: #DADEF4;
   background-size: cover;
 }
-.news-1{
+
+.news-1 {
   background-image: url("../images/news-1.jpeg");
 }
-.box-headline{
+
+.box-headline {
   white-space: normal;
   margin-top: 10px;
   font-size: 16px;
 }
-.box-date{
+
+.box-date {
   font-size: 12px;
   margin-top: 8px;
 }
-.box-price{
+
+.box-price {
   margin-top: 8px;
   font-weight: 600;
   font-size: 16px;
 }
-.swipe-top{
+
+.swipe-top {
   width: 100%;
   height: 35px;
 }
-.float-left{
+
+.float-left {
   float: left;
 }
-.float-right{
+
+.float-right {
   float: right;
 }
-.font-blue{
+
+.font-blue {
   color: #5979C4;
 }
-.font-red{
+
+.font-red {
   color: #CF705A;
 }
-.covid-update img{
+
+.covid-update img {
   width: 100%;
   height: auto;
   max-width: 600px;
 }
-.covid-update{
+
+.covid-update {
   margin-bottom: 50px;
 }
-.help-button{
+
+.help-button {
   margin: 30px 0;
   border: none;
   background-color: #DADEF4;
@@ -128,36 +155,43 @@ a{
 }
 
 /* Images */
-.news-1{
+.news-1 {
   background-image: url("../images/news/news-1.jpeg");
 }
-.news-2{
+
+.news-2 {
   background-image: url("../images/news/news-2.jpeg");
 }
-.news-3{
+
+.news-3 {
   background-image: url("../images/news/news-3.jpeg");
 }
 
-.marketplace-1{
+.marketplace-1 {
   background-image: url("../images/marketplace/marketplace-1.jpg");
 }
-.marketplace-2{
+
+.marketplace-2 {
   background-image: url("../images/marketplace/marketplace-2.jpg");
 }
-.marketplace-3{
+
+.marketplace-3 {
   background-image: url("../images/marketplace/marketplace-3.jpg");
 }
-.marketplace-4{
+
+.marketplace-4 {
   background-image: url("../images/marketplace/marketplace-4.jpg");
 }
 
-.events-1{
+.events-1 {
   background-image: url("../images/events/events-1.jpg");
 }
-.events-2{
+
+.events-2 {
   background-image: url("../images/events/events-2.jpg");
 }
-.events-3{
+
+.events-3 {
   background-image: url("../images/events/events-3.jpg");
 }
 
@@ -386,7 +420,7 @@ input[type=password] {
 }
 
 
-button {
+.submit_button {
   background-color: #CF705A;
   color: white;
   padding: 14px 20px;
@@ -415,4 +449,70 @@ button {
   text-decoration: underline;
   margin-top: 8px;
 
+}
+
+
+/*-----Marketplace Screen-----*/
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container_marketplace {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#buttons_marketplace {
+  margin-top: 20px;
+  margin-left: 25px;
+
+}
+
+/* Style the buttons */
+.btn {
+  border: 1px solid #5979C4;
+  border-radius: 20px;
+  margin-left: -10px;
+  margin-right: 15px;
+  width: 87px;
+  height: 31px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #5979C4;
+
+}
+
+.btn.active {
+  background-color: #CF705A;
+  color: white;
+  border: 1px solid #CF705A;
+
+}
+
+/* scroll menu */
+
+.scrollmenu {
+  white-space: nowrap;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
 }
