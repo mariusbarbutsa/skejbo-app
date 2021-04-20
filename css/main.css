@@ -630,3 +630,13 @@ form {
   font-size: 17px;
   color: #464646;
 }
+
+.covid_image {
+  background: url('../images/news/news-1.jpeg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 340px;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
