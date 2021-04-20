@@ -1,14 +1,209 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Skejbo | Map </title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* style map */
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+    }
+
+    /* style pins and pop ups */
+    .marker {
+      background-image: url('images/SkejboPin.png');
+      background-size: cover;
+      width: 30px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .mapboxgl-popup {
+      max-width: 100px;
+    }
+
+    .mapboxgl-popup-content {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script>
+
+    // add map to the HTML
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmxhZGFhZmFuYXNqZXZhIiwiYSI6ImNrbTYxM29jdDBqbDcyb3AxamY4c3g0c2IifQ.2eWweawyepYM8xep6CvxzQ';
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/vladaafanasjeva/cknou0t065h9617mpxbxtmzxm', // style URL
+      center: [10.193946, 56.196058], // starting position [lng, lat]
+      zoom: 17 // starting zoom
+    });
+
+    // add pins to the map
+    var geojson = {
+      type: 'FeatureCollection',
+      features: [{
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1936603, 56.1964162]
+        },
+        properties: {
+          title: 'Laundry room',
+          description: 'Skejbo Kollegiet'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1937075, 56.1965061]
+        },
+        properties: {
+          title: 'Bar',
+          description: 'Skejbo Kollegiet'
+        }
+
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1936676, 56.1966893]
+        },
+        properties: {
+          title: 'Volleyball Court',
+          description: 'Skejbo Kollegiet'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1943177, 56.1952464]
+        },
+        properties: {
+          title: 'Fire Pit',
+          description: 'Skejbo Kollegiet'
+        }
+
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1938758, 56.1957810]
+        },
+        properties: {
+          title: 'Parking',
+          description: 'Skejbo Kollegiet'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1951247, 56.1957941]
+        },
+        properties: {
+          title: 'Skejbyhøj/Skejby Busvej',
+          description: 'Bus: 15 Brabrand Vest'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1953328, 56.1957472]
+        },
+        properties: {
+          title: 'Skejbyhøj/Skejby Busvej',
+          description: 'Bus: 15 Skejby Nordlandsvej'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1936056, 56.1946628]
+        },
+        properties: {
+          title: 'Skejby Centret',
+          description: 'Bus: 1A Skejbyparken, <br> 6A Holme/Axel Gruhns Vej'
+
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1939781, 56.1946598]
+        },
+        properties: {
+          title: 'Skejby Centret/Skejbygårdsvej',
+          description: 'Bus: 1A Kolt, <br> 6A Risskov'
+        }
+      },
+
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [10.1942275, 56.1943167]
+        },
+        properties: {
+          title: 'Skejby Centret',
+          description: 'Big Shopping Mall'
+        }
+      }],
+    };
+
+    // add markers to map
+    geojson.features.forEach(function (marker) {
+
+      // create a HTML element for each feature
+      var el = document.createElement('div');
+      el.className = 'marker';
+
+      // make a marker for each feature and add to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+        .addTo(map);
+    });
+
+  </script>
+
+</body>
+
 </html>
