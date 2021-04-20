@@ -712,7 +712,7 @@ form {
   font-size: 12px;
 }
 .news_image3 {
-  background: url('../images/news/news-2.jpeg') no-repeat;
+  background: url('../images/news/news-4.png') no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 80px;
@@ -745,6 +745,7 @@ form {
   height: 80px;
 
 }
+
 /* article detail page */ 
 .art_detail {
   margin: 45px 20px;
