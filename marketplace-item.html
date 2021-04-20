@@ -23,28 +23,89 @@
     </div>
     </div>
 
+
+
     <!-- This is the code for article's post -->
     <div class="art_detail">
         <!-- Back button -->
-        <a href="news.html"> <img src="images/left-arrow.svg" alt="Back button" class="back_arrow"> </a>
+        <a href="marketplace.html"> <img src="images/left-arrow.svg" alt="Back button" class="back_arrow"> </a>
 
         <!-- Article detail-->
-        <h1 class="art_heading">Larry the lawnmower is missing, have you seen him?</h1>
+        <h1 class="art_heading">Leather sofa</h1>
     </div>
-    <div class="art_image"></div>
-    <p class="post_date">Posted 2 days ago</p>
-    <p class="art_text"><b>MISSING!</b><br>
-        Our beloved lawnmower Larry was sadly stolen last night, we believe between the hours of 2am and 6am. <br><br>
 
-        Larry has always been there for us to help keep our grass short and tidy and we miss him dearly. <br><br>
+    <!-- Image slider container -->
+    <div class="slideshow-container">
 
-        If anyone has seen Larry or knows any knowledge of his whereabouts, we would really appreciate it if you would
-        inform the student administration team so that they can help Larry find his way back home. <br><br>
+        <!-- Full-width images-->
+        <div class="mySlides fade">
+            <img src="images/marketplace/marketplace-1.jpg" style="width:100%">
+        </div>
 
-        Please share this article with your family and friends and use #FindLarryLawnmower to help us bring Larry back
-        home.
+        <div class="mySlides fade">
+            <img src="images/marketplace/marketplace-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/marketplace/marketplace-1.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Item information -->
+    <p class="price_info">450 DKK</p>
+    <p class="item_date">1 day ago</p>
+    <p class="art_text">Brown leather sofa for sale.<br>
+        It is a bit worn with a few scratches on the leather but it has a classic retro look to it.<br>
+        It's 2m in width and 1m in length.
     </p>
 
+    <!-- Contact seller button -->
+    <div class="message_button">Message seller</div>
+
+    <script>
+        // Javascript for image slider to work
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
 </body>
 
 </html>
