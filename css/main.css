@@ -455,13 +455,6 @@ input[type=password] {
 /*-----Marketplace Screen-----*/
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
   display: none;
 }
 
@@ -470,13 +463,24 @@ input[type=password] {
 }
 
 .container_marketplace {
-  margin-top: 20px;
   overflow: hidden;
+  margin: 0 auto;
+  margin-top: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+}
+
+.container_column {
+  display: flex;
+  flex-direction: column;
 }
 
 #buttons_marketplace {
   margin-top: 20px;
   margin-left: 25px;
+  margin-bottom: 13px;
 
 }
 
@@ -515,4 +519,69 @@ input[type=password] {
 
 .scrollmenu::-webkit-scrollbar {
   display: none;
+}
+
+/* marketplace items */
+
+
+
+.marketplace_item_image {
+  background: url('/images/marketplace/marketplace-1.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
+}
+
+.marketplace_item_header {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #464646;
+  margin-top: 6px;
+  text-align: left;
+
+}
+
+.marketplace_item_category {
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #B1B1B1;
+  margin-top: 1px;
+  text-align: left;
+
+}
+
+.marketplace_item_price {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #5979C4;
+  margin-top: 1px;
+  text-align: left;
+}
+
+.marketplace_item_image2 {
+  background: url('/images/marketplace/marketplace-2.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
+}
+
+.marketplace_item_image3 {
+  background: url('/images/marketplace/marketplace-3.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
+}
+
+.marketplace_item_image4 {
+  background: url('/images/marketplace/marketplace-4.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 166px;
+  height: 179px;
 }
