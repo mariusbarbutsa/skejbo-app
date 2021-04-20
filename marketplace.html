@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Marketplace Skejbo DormBuddy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Marketplace Skejbo DormBuddy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
-    <div class="top-bar">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <a href="dashboard.html">
       <div class="logo">
         <img src="images/icons/logo.svg" alt="Logo">
-      </div>
-      <div class="profile-icon">
-        <img src="images/icons/profile.svg" alt="Profile icon">
-      </div>
-    </div>
+    </a>
+  </div>
+  <div class="profile-icon">
+    <img src="images/icons/profile.svg" alt="Profile icon">
+  </div>
+  </div>
 
-    <div class="search-bar">
-      <input type="text" class="search-bar" id="search-bar" placeholder="Search">
-    </div>
+  <div class="search-bar">
+    <input type="text" class="search-bar" id="search-bar" placeholder="Search">
+  </div>
 
-    <!-- This is the code for the Scrolling section and filter menu -->
+  <!-- This is the code for the Scrolling section and filter menu -->
 
-    <div class="scrollmenu">
+  <div class="scrollmenu">
     <div id="buttons_marketplace">
       <button class="btn active" onclick="filterSelection('all')"> All</button>
       <button class="btn" onclick="filterSelection('Tables')"> Tables</button>
@@ -36,57 +40,58 @@
       <button class="btn" onclick="filterSelection('Drawers')"> Drawers</button>
     </div>
   </div>
-<!-- Here are the market items -->
+  <!-- Here are the market items -->
   <div class="container_column">
 
     <div class="container_marketplace">
       <div class="filterDiv Sofas">
-      <div class="marketplace_item_image"></div>
-      <p class="marketplace_item_header">Leather Sofa</p>
-      <p class="marketplace_item_category">Sofas</p>
-      <p class="marketplace_item_price">700 DKK</p>
+        <div class="marketplace_item_image"></div>
+        <p class="marketplace_item_header">Leather Sofa</p>
+        <p class="marketplace_item_category">Sofas</p>
+        <p class="marketplace_item_price">700 DKK</p>
       </div>
       <div class="filterDiv Sofas">
         <div class="marketplace_item_image2"></div>
         <p class="marketplace_item_header">Sofa</p>
         <p class="marketplace_item_category">Sofas</p>
         <p class="marketplace_item_price">700 DKK</p>
-        </div>
+      </div>
     </div>
 
-      <div class="container_marketplace">
-        <div class="filterDiv Drawers">
+    <div class="container_marketplace">
+      <div class="filterDiv Drawers">
         <div class="marketplace_item_image3"></div>
         <p class="marketplace_item_header">Retro dresser</p>
         <p class="marketplace_item_category">Drawers</p>
         <p class="marketplace_item_price">200 DKK</p>
-        </div>
-        <div class="filterDiv Tables">
+      </div>
+      <div class="filterDiv Tables">
         <div class="marketplace_item_image4"></div>
         <p class="marketplace_item_header">Bed Table</p>
         <p class="marketplace_item_category">Tables</p>
         <p class="marketplace_item_price">150 DKK</p>
-        </div>  
+      </div>
     </div>
 
     <div class="container_marketplace">
       <div class="filterDiv Chairs">
-      <div class="marketplace_item_image5"></div>
-      <p class="marketplace_item_header">Wooden chair</p>
-      <p class="marketplace_item_category">Chairs</p>
-      <p class="marketplace_item_price">FREE</p>
+        <div class="marketplace_item_image5"></div>
+        <p class="marketplace_item_header">Wooden chair</p>
+        <p class="marketplace_item_category">Chairs</p>
+        <p class="marketplace_item_price">FREE</p>
       </div>
       <div class="filterDiv Beds">
         <div class="marketplace_item_image6"></div>
         <p class="marketplace_item_header">Upside Bed</p>
         <p class="marketplace_item_category">Beds</p>
         <p class="marketplace_item_price">230 DKK</p>
-        </div>
+      </div>
     </div>
 
   </div>
-    
 
-  </body>
-  <script src="js/main.js"></script>
+
+</body>
+<script src="js/main.js"></script>
+
 </html>
