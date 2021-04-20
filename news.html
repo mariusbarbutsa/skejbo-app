@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marketplace Skejbo DormBuddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="logo">
+        <img src="images/icons/logo.svg" alt="Logo">
+      </div>
+      <div class="profile-icon">
+        <img src="images/icons/profile.svg" alt="Profile icon">
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" class="search-bar" id="search-bar" placeholder="Search">
+    </div>
+
+    <!-- This is the code for the Scrolling section and filter menu -->
+
+    <div class="scrollmenu">
+    <div id="buttons_marketplace">
+      <button class="btn active" onclick="filterSelection('all')"> All</button>
+      <button class="btn" onclick="filterSelection('News')"> News</button>
+      <button class="btn" onclick="filterSelection('Events')"> Events</button>
+      <button class="btn" onclick="filterSelection('Coronavirus')"> Coronavirus</button>
+    </div>
+  </div>
+<!-- Here are the news and events tabs -->
+
+  <div class="container_column_news">
+
+      <div class="filterDiv News">
+      <div class="news_flexbox">
+      <div class="news_image"></div>
+      <div class="text_flexbox">
+      <a href="#"><p class="news_header">Denmark speeds up reopening plan: Here’s what changes next week</p></a>
+      <p class="news_subtext1">Skejbo administration</p>
+      <p class="news_subtext2">1 day ago</p>
+      </div></div></div>
+
+      <div class="filterDiv Events">
+        <div class="news_flexbox">
+        <div class="news_image2"></div>
+        <div class="text_flexbox">
+        <p class="news_subheader">APR 17, 8 PM</p>
+        <a href="#"><p class="news_header">Beer tasting night</p></a>
+        <p class="news_subtext1">Skejbo kollegiet bar</p>
+        <p class="news_subtext2">2 days ago</p>
+        </div></div></div>
+
+        <div class="filterDiv News">
+            <div class="news_flexbox">
+            <div class="news_image3"></div>
+            <div class="text_flexbox">
+                <a href="#"><p class="news_header">Missing: Larry the lawnmower is missing, have you seen him?</p></a>
+            <p class="news_subtext1">Skejbo administration</p>
+            <p class="news_subtext2">2 days ago</p>
+            </div></div></div>
+
+            <div class="filterDiv News">
+                <div class="news_flexbox">
+                <div class="news_image4"></div>
+                <div class="text_flexbox">
+                    <a href="#"><p class="news_header">’One metre, but two when possible’: Denmark changes social distance…</p></a>
+                <p class="news_subtext1">Skejbo administration</p>
+                <p class="news_subtext2">3 days ago</p>
+                </div></div></div>
+
+                <div class="filterDiv Events">
+                    <div class="news_flexbox">
+                    <div class="news_image5"></div>
+                    <div class="text_flexbox">
+                    <p class="news_subheader">APR 25, 8 PM</p>
+                    <a href="#"><p class="news_header">Stand up night</p></a>
+                    <p class="news_subtext1">Skejbo kollegiet bar</p>
+                    <p class="news_subtext2">4 days ago</p>
+                    </div></div></div>
+
+                    <div class="filterDiv News">
+                        <div class="news_flexbox">
+                        <div class="news_image6"></div>
+                        <div class="text_flexbox">
+                            <a href="#"><p class="news_header">Rejected: Idea of turning bar into indoor swimming pool #flooding</p></a>
+                        <p class="news_subtext1">Skejbo administration</p>
+                        <p class="news_subtext2">3 days ago</p>
+                        </div></div></div>
+
+
+  </div>
+    
+
+  </body>
+  <script src="js/main.js"></script>
+</html>
