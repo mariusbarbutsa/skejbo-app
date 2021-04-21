@@ -4,21 +4,25 @@
   font-size: 18px;
   color: #464646;
 }
-
+body{
+  padding-bottom: 80px;
+}
 a {
   text-decoration: none;
   color: #464646;
 }
-
+p, H3, H2, H1{
+  line-height: 1.5;
+}
 .wrapper {
   width: 90%;
   margin: auto;
 }
 
 .top-bar {
+  display: block;
   padding: 15px 20px;
   background-color: #fff;
-  display: block;
 }
 
 .logo {
@@ -50,7 +54,7 @@ a {
   border-radius: 20px;
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 20px 0;
   display: inline-block;
   border: 0px solid #ccc;
   box-sizing: border-box;
@@ -58,7 +62,7 @@ a {
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  width: 92%;
+  width: 100%;
   text-align: left;
 }
 
@@ -156,7 +160,6 @@ a {
   width: 100%;
   text-align: center;
   color: #5979C4;
-  margin-bottom: 100px;
 }
 
 /* Images */
@@ -202,6 +205,61 @@ a {
 
 a {
   text-decoration: none;
+}
+svg{
+  fill: #464646;
+}
+.menu-item div{
+  display: inline-block;
+}
+.menu-active{
+  background-color: #DDE1F9;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+.icon-description{
+  font-size: 14px;
+  margin-left: 8px;
+  text-align: left;
+}
+.menu-active .icon-description{
+  display: block !important;
+  color: #5979C4;
+}
+.menu-active svg{
+  fill: #5979C4;
+}
+.menu-item{
+  display: flex;
+  align-items: center;
+  min-width: 40px;
+}
+.bottom-navigation{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px -12px 39px -27px #000000;
+  box-shadow: 0px -12px 39px -27px #000000;
+}
+.menu-wrapper{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-navigation a{
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /*-----Onboarding First Screen-----*/
@@ -612,7 +670,7 @@ form {
   width: 55px;
   height: 55px;
   position: fixed;
-  top: 675px;
+  bottom: 70px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -931,6 +989,7 @@ form {
   background-color: #A2ABE3;
 }
 
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -956,5 +1015,15 @@ form {
 
   to {
     opacity: 1
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .menu-item{
+    min-width: 0;
+  }
+  .menu-active{
+    padding: 4px 10px;
   }
 }
