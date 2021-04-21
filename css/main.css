@@ -607,6 +607,18 @@ form {
   height: 179px;
 }
 
+.add_button {
+  background: url('../images/plus_button.svg') no-repeat;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  top: 675px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+
 /*--------------News and Events Screen--------------*/
 
 .container_column_news {
@@ -711,6 +723,7 @@ form {
   padding: 5px 0;
   font-size: 12px;
 }
+
 .news_image3 {
   background: url('../images/news/news-4.png') no-repeat;
   background-size: cover;
@@ -746,7 +759,7 @@ form {
 
 }
 
-/* article detail page */ 
+/* article detail page */
 .art_detail {
   margin: 45px 20px;
   display: flex;
@@ -875,7 +888,8 @@ form {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -895,7 +909,8 @@ form {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #A2ABE3;
 }
 
@@ -911,7 +926,8 @@ form {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #A2ABE3;
 }
 
@@ -924,11 +940,21 @@ form {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
