@@ -733,7 +733,7 @@ form {
 }
 
 .news_image4 {
-  background: url('../images/news/news-3.jpeg') no-repeat;
+  background: url('../images/news/news-2.jpeg') no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 80px;
@@ -751,7 +751,61 @@ form {
 }
 
 .news_image6 {
-  background: url('../images/events/events-4.jpg') no-repeat;
+  background: url('../images/news/news-6.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image7 {
+  background: url('../images/news/assembly-2.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image8 {
+  background: url('../images/news/news-3.jpeg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image9 {
+  background: url('../images/news/news-7.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image10 {
+  background: url('../images/events/event-3.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image11 {
+  background: url('../images/news/assembly-3.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.news_image12 {
+  background: url('../images/news/assembly-1.jpg') no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 80px;
