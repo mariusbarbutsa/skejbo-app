@@ -759,7 +759,7 @@ form {
 
 }
 
-/* article detail page */
+/* Articles and event detail page */
 .art_detail {
   margin: 45px 20px;
   display: flex;
@@ -841,6 +841,16 @@ form {
 .location-name {
   padding: 5px 0;
   font-size: 12px;
+}
+
+.assembly_image {
+  background: url('../images/news/assembly-2.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  width: 340px;
+  height: 199px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* Marketplace item detailed */
