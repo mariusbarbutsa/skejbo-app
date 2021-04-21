@@ -164,7 +164,7 @@ p, H3, H2, H1{
 
 /* Images */
 .news-1 {
-  background-image: url("../images/news/news-1.jpeg");
+  background-image: url("../images/news/news-1.jpg");
 }
 
 .news-2 {
@@ -172,7 +172,7 @@ p, H3, H2, H1{
 }
 
 .news-3 {
-  background-image: url("../images/news/news-3.jpeg");
+  background-image: url("../images/news/news-3.jpg");
 }
 
 .marketplace-1 {
@@ -277,7 +277,7 @@ svg{
 }
 
 .onboarding_rectangle {
-  top: 200px;
+  top: 100px;
   left: 15px;
   right: 0;
   margin: auto;
@@ -291,7 +291,7 @@ svg{
 
 .onboarding_heading {
   margin: 0 auto;
-  margin-top: 270px;
+  margin-top: 140px;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -369,14 +369,14 @@ svg{
   position: relative;
   background: url('../images/onboarding2.svg') no-repeat;
   background-size: contain;
-  width: 239px;
+  width: 180px;
   height: 600px;
 
 }
 
 .onboarding_heading2 {
   margin: 0 auto;
-  margin-top: -137px;
+  margin-top: -270px;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -399,27 +399,24 @@ svg{
 
 
 .onboarding_rectangle3 {
-  top: 202px;
-  left: 15px;
-  right: 0;
-  margin: auto;
   position: relative;
+  top: 70px;
+  margin: auto;
   background: url('../images/onboarding3.svg') no-repeat;
   background-size: contain;
-  width: 198px;
-  height: 216px;
-
+  background-position: center;
+  height: 220px;
+  width: 100%;
 }
 
 .onboarding_heading3 {
   margin: 0 auto;
-  margin-top: 247px;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #5979C4;
   text-align: center;
-
+  margin-top: 120px;
 }
 
 
@@ -437,13 +434,13 @@ svg{
 
 .onboarding_rectangle4 {
   top: 99px;
-  left: 97px;
   position: relative;
   background: url('../images/greetings.svg') no-repeat;
   background-size: contain;
-  width: 261px;
+  background-position: center;
   height: 236px;
-
+  width: 100%;
+  padding-left: 40px;
 }
 
 .onboarding_heading4 {
@@ -481,20 +478,25 @@ form {
   font-weight: 400;
 
 }
-
-
+.input-wrapper{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
 .submit_button {
   background-color: #CF705A;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+  color: #fff;
   border-radius: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 ::placeholder {
@@ -836,7 +838,7 @@ form {
 }
 
 .news_image9 {
-  background: url('../images/news/news-7.jpg') no-repeat;
+  background: url('../images/news/news-3.jpg') no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 80px;
@@ -845,7 +847,7 @@ form {
 }
 
 .news_image10 {
-  background: url('../images/events/event-3.jpg') no-repeat;
+  background: url('../images/events/events-3.jpg') no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 80px;
